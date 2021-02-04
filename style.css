@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Pacifico', cursive;
+}
+
+header {
+    /* background-color: #ffc5fb; */
+    background-image: linear-gradient(to top right, rgb(143, 99, 255), rgb(153, 105, 253), rgb(163, 111, 252), rgb(174, 117, 250), rgb(184, 123, 248), rgb(194, 129, 247), rgb(204, 136, 245), rgb(214, 142, 244), rgb(224, 148, 242), rgb(235, 154, 240), rgb(245, 160, 239), rgb(255, 166, 237));
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    height: 84px;
+    width: 100%;
+}
+a {
+    color: #000000;
+    text-decoration: none;
+}
+.nav {
+
+    display: flex;
+    margin: auto;
+    margin-left: 20px;
+}
+.nav-btn {
+    display: block;
+    flex-direction: row;
+    align-content: center;
+    margin-right: 10px;
+    text-decoration: none;
+}
+.nav-btn:hover {
+    text-decoration: none;
+    border-bottom: 2px solid #000000;
+    transition: ease-out 0.1s;
+}
+
+main {
+    display: flex;
+    margin-top: 15vh;
+    justify-content: center;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.photo {
+    margin-bottom: 10px;
+    border-radius: 3%;
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.38);
+}
+.text {
+    margin-right: 70px;
+    margin-left: 70px;
+    padding-left: 10px; 
+    border-left: 3px dashed #f9c5ff;
+}
+h1 {
+    margin-left: 20px;
+    text-decoration: underline;
+}

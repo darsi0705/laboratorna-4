@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive-flex</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+        }
+        nav {
+            display: flex;
+        color: #fff;
+        padding: 10px;
+        height: 75px;
+        }
+        nav a {
+            right: 10px;
+        }
+        header {
+            background-color: #fffa9e;
+            height: 400px;
+            background: url(https://images.unsplash.com/photo-1478391679764-b2d8b3cd1e94?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80) ;
+            box-sizing: border-box;
+            background-size: cover;
+            background-attachment: fixed;
+            width: 100%;
+        }
+        .logo {
+            height: 64px;
+            margin: 10px;
+            border-radius: 50%;
+        }
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .nav {
+            position: absolute;
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+            right: 10px;
+            top: 30px;
+            margin-right: 10px;
+        }
+        .nav-btn {
+            display: block;
+            flex-direction: row;
+            align-content: center;
+            margin-right: 10px;
+            text-decoration: none;
+        }
+        .nav-btn:hover {
+            text-decoration: none;
+            border-bottom: 2px solid #fff;
+            transition: ease-out 0.1s;
+        }
+        main {
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-top: 75px;
+        margin-bottom: 75px;
+        }
+        .paragraph {
+        height: 200px;
+        margin-bottom: 75px;
+        }
+        .gray-box {
+        display: flex;
+        justify-content: space-between;
+        }
+        .content-g {
+        display: block;
+        width: 48%;
+        }
+        .prefooter {
+        height: 40px;
+        background-color: silver;
+        
+        }
+        footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            color:#fff;
+            background-color: black;
+        }
+        .main-h {
+            display: flex;
+            justify-content: center;
+        }
+        .content {     
+            color:#fff;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-right: 50;
+        }
+        .text {
+            text-align: center;
+            width: 100%;
+
+        }      
+        .content-pht {
+            width: 100%;
+        }
+        @media screen and (max-width: 415px){
+            .logo {
+                display: none;
+            }
+            header {
+                height: 250px;
+                background-attachment: scroll;
+            }
+            main {
+                margin-top: 15px;
+                margin-bottom: 15px;
+                display: flex;
+                justify-content: center;
+            }
+            .paragraph {
+                width: 320px;
+                margin-bottom: 15px;
+            }
+            footer {
+                height: 40px;
+            }
+            .nav {
+                font-size: 11px;
+                margin-right: 0;
+                top: 10px;
+                text-align: center;
+            }
+            .nav-btn {
+                margin-right: 5px;
+            }
+
+        } 
+    </style>
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <div class="nav">
+                <a href="index.html" class="nav-btn">MAIN PAGE</a>
+                <a href="about.html" class="nav-btn">ABOUT</a>
+                <a href="contacts.html" class="nav-btn">CONTACTS</a>
+                <a href="skills.html" class="nav-btn">SKILLS</a>
+                <a href="responsive-flex.html" class="nav-btn">PARIS</a>
+                <a href="#" class="nav-btn">PARALLAX</a>
+                <a href="https://codepen.io/darsi0705" class="nav-btn">CODEPEN</a>
+            </div>
+        </nav>
+        <section class="main-h">
+            <div class="content">
+                <h1 class="text">PARIS</h2>
+            </div>
+        </section>
+    </header>
+    <main>
+        <div class="content-main">
+            <p class="paragraph" align="center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque quibusdam eos deleniti necessitatibus? Voluptatum, culpa? Similique ea molestiae pariatur. Repellat pariatur ducimus consequatur. Praesentium minima eos aspernatur aliquam! In, voluptas?</p>
+            <section class="gray-box">
+                <div class="content-g">
+                    <img src="https://images.unsplash.com/photo-1471874708433-acd480424946?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt=""  class="content-pht">
+                    <p align="center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate</p>
+                </div>
+                <div class="content-g">
+                    <img src="https://images.unsplash.com/photo-1513736302339-d4d0335c0fb5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt=""  class="content-pht">
+                    <p align="center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate</p>
+                </div>
+            </section>
+        </div>
+        
+    </main>
+    <div class="prefooter" align="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda labore voluptates rem tenetur consequuntur rerum eligendi iusto cupiditate?</div>
+    <footer>
+        <p>2021</p>
+    </footer>
+</body>
+</html>
